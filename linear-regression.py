@@ -5,10 +5,10 @@ from sklearn.linear_model import LinearRegression
 import statsmodels.api as sm
 
 # データ読み込み
-df = pd.read_excel('2018_summer_original.xlsx',
-                   sheet_name='Sheet2', encoding='utf-8')
-x = df[['香港']]
-y = df[['香港訪日客数']]
+df = pd.read_excel('[file name].xlsx',
+                   sheet_name='sheet name', encoding='utf-8')
+x = df[['explanatory variable']]
+y = df[['objective variable']]
 
 # 回帰線を作図
 model_lr = LinearRegression()
